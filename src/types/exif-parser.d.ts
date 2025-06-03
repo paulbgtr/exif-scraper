@@ -1,3 +1,4 @@
 declare module "exif-parser" {
-  export function create(buffer: Buffer): any;
+  import { ExifData } from "@/src/types/exif-data";
+  export function create(buffer: Buffer): ExifData;
 }

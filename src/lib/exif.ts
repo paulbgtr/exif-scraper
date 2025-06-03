@@ -1,10 +1,7 @@
 "use server";
 
 import exifParser from "exif-parser";
-
-interface ExifData {
-  [key: string]: any;
-}
+import type { ExifData } from "@/types/exif-data";
 
 export async function scrapeExifData(
   imageBuffer: ArrayBuffer

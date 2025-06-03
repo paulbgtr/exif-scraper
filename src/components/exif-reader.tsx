@@ -2,10 +2,7 @@
 
 import { scrapeExifData } from "@/lib/exif";
 import { useState } from "react";
-
-interface ExifData {
-  [key: string]: any;
-}
+import type { ExifData } from "@/types/exif-data";
 
 export const ExifReader = () => {
   const [exifData, setExifData] = useState<ExifData | null>(null);
